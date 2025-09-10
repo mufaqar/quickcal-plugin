@@ -242,19 +242,19 @@ if ( ! class_exists( 'FortAwesome\FontAwesome_Loader' ) ) :
 		 * @ignore
 		 */
 		public function activate_plugin() {
-			$activation_failed_message = __( 'Font Awesome could not be activated.', 'font-awesome' );
+			// $activation_failed_message = __( 'Font Awesome could not be activated.', 'font-awesome' );
 
-			try {
-				$this->select_latest_version_plugin_installation();
-				require_once self::$loaded['path'] . 'includes/class-fontawesome-activator.php';
-				FontAwesome_Activator::activate();
-			} catch ( Exception $e ) {
-				self::emit_admin_error_output( $e, $activation_failed_message );
-				exit;
-			} catch ( Error $e ) {
-				self::emit_admin_error_output( $e, $activation_failed_message );
-				exit;
-			}
+			// try {
+			// 	$this->select_latest_version_plugin_installation();
+			// 	require_once self::$loaded['path'] . 'includes/class-fontawesome-activator.php';
+			// 	FontAwesome_Activator::activate();
+			// } catch ( Exception $e ) {
+			// 	self::emit_admin_error_output( $e, $activation_failed_message );
+			// 	exit;
+			// } catch ( Error $e ) {
+			// 	self::emit_admin_error_output( $e, $activation_failed_message );
+			// 	exit;
+			// }
 		}
 
 		/**
