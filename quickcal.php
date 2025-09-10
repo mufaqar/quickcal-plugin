@@ -4,13 +4,13 @@
 Plugin Name: QuickCal
 Plugin URI: https://quickcal.co
 Description: Powerful appointment booking made simple.
-Version: 1.0.16
-Author: QuickCal
+Version: 2.0.1
+Author: Henry Anayo
 Author URI: https://quickcal.co/
 Text Domain: booked
 */
 
-define( 'QUICKCAL_VERSION', '1.0.16' );
+define( 'QUICKCAL_VERSION', '2.0.1' );
 define( 'QUICKCAL_WELCOME_SCREEN', get_option('booked_welcome_screen',true) );
 define( 'QUICKCAL_DEMO_MODE', get_option('booked_demo_mode',false) );
 define( 'QUICKCAL_PLUGIN_URL', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
